@@ -1,0 +1,22 @@
+nav {
+ &#site-navigation {
+
+  // Mobile Toggle
+  .menu-toggle {
+   display: none;
+   // @media { display:block; }
+  }
+
+  // Navigation Items
+  .menu {
+   .nav-menu {
+    li {
+     a {}
+     &.current_page_item {
+      a {}
+     }
+    }
+   }
+  }
+ }
+}

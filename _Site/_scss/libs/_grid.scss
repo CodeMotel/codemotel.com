@@ -1,0 +1,27 @@
+
+// Rows
+.row {
+ width: 85%;
+ max-width: 1140px;
+ margin: 0 auto;
+ @extend %clearfix;
+}
+
+// Columns
+.column {
+ $padding: 2%;
+ $margin: 2%;
+
+ float: left;
+ box-sizing: border-box;
+ padding: 0 $padding 1em;
+ //margin-right: $margin;
+
+ &.two-third { width: ((100% / 3) * 2); }
+ &.half { width: (100% / 2); }
+ &.third { width: (100% / 3); }
+ &.quarter { width: (100% / 4); }
+
+ &:first-of-type { padding-left: 0; }
+ &:last-of-type { padding-right: 0; }
+}

@@ -1,0 +1,15 @@
+/* Footer
+======================================================= */
+footer {
+ box-sizing: border-box;
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ padding: 1em;
+ background: $dark-blue;
+ color: $light-blue;
+ letter-spacing: 0.08em;
+ text-align: center;
+
+ @media (max-width: 600px) { position: relative; }
+}

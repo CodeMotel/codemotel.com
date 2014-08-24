@@ -1,0 +1,155 @@
+body#home {
+ background: $light-blue;
+ text-align: center;
+}
+
+// Logo and Intro
+#logo {
+ img {
+  width: 100px;
+  margin: 8em 0 2em;
+
+  @media (max-width: 600px) {
+   width: 85px;
+   margin: 4em 0 1.5em;
+  }
+ }
+ h1 {
+  text-shadow: 2px 2px 0 $dark-blue;
+  margin-bottom: 2em;
+
+  @media (max-width: 400px) { margin-bottom: 1.5em; }
+ }
+}
+
+
+// Locate Area
+p.tip { font-size: 2em; }
+
+#get-url {
+ display: inline-block;
+ position: relative;
+ width: auto;
+ margin-top: 0.8em;
+ padding: 0.8em 1.25em 0.6em;
+ background: $mid-blue;
+ border-radius: 0.3em;
+ color: $dark-blue;
+ font-size: 2em;
+
+ input {
+  -webkit-appearance: none;
+  border: none;
+  background: none;
+  display: inline-block;
+  color: $dark-blue;
+
+  @include lato;
+
+  &[type="text"] {
+   width: 5em;
+   margin-right: 0.2em;
+   border-bottom: 1px solid $dark-blue;
+   border-radius: 0;
+   font-size: 1em;
+   text-align: center;
+
+   &:focus, &:active {
+    outline: none;
+    -webkit-appearance: none
+   }
+  }
+
+  &[type="submit"] {
+   cursor: pointer;
+   position: relative;
+   top: -0.125em;
+   margin-left: 0.7em;
+   border: 1px solid $dark-blue;
+   border-radius: 0.25em;
+   padding: 0.28em 0.625em 0.35em 0.57em;
+   font-size: 0.9em;
+   @include ease;
+
+   &:hover {
+    border-color: white;
+    color: white;
+   }
+  }
+ }
+
+ @media (max-width: 600px) { font-size: 1.5em; }
+
+ @media (max-width: 400px) { font-size: 1.25em; }
+}
+
+#form-tooltip {
+ position: absolute;
+ display: block;
+ float: left;
+ opacity: 1;
+ bottom: -2.3em;
+ left: 9em;
+ padding: 0.9em 1.1em;
+ border-radius: 0.3em;
+ background: white;//$dark-blue;
+ box-shadow: 1px 1px 2px 0 rgba($dark-blue, 0.3);
+ color: $light-blue;
+ font-size: 0.4em;
+ font-weight: 400;
+ text-transform: uppercase;
+ animation: bounce 1.33s linear 1s 2;
+ @include ease;
+
+ &:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 40.5%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+ }
+
+ // Touch Devices
+ html.touch & {
+  left: 10.25em;
+  @media (max-width: 420px) { left: 4.35em; transform: translateY(0.7em); }
+ }
+
+ // Firefox
+ html.firefox & {
+  left: 10.75em;
+ }
+
+ // Responsive
+ @media (max-width: 600px) { left: 5.25em; }
+
+ @media (max-width: 400px) { left: 3.9em; transform: translateY(0.5em); }
+}
+
+// Bounce Animation
+@keyframes bounce {
+ 0% { bottom: -2.3em; }
+ 60% { bottom: -2.3em; }
+ 70% { bottom: -1.5em; }
+ 80% { bottom: -2.4em; }
+ 90% { bottom: -2em; }
+ 100% { bottom: -2.3em; }
+}
+
+
+// Contact Area
+#contact {
+ position: absolute;
+ bottom: 8em;
+ width: 100%;
+
+ @media (max-width: 600px) {
+  position: relative;
+  bottom: 2em;
+  margin-top: 9em;
+ }
+}

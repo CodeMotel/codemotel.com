@@ -1,0 +1,27 @@
+.button {
+ opacity: 0.6;
+ display: inline-block;
+ padding: 1.1em 1.75em 0.2em 1.5em;
+ margin: 0;
+ border: 1px solid white;
+ border: 1px solid rgba(255,255,255,0.5);
+ border-radius: 0.4em;
+ color: white;
+ font-size: 1.1em;
+ letter-spacing: 0.075em;
+ text-decoration: none;
+ text-transform: uppercase;
+ @include lato(300);
+
+ &:first-of-type { margin-right: 1em; }
+
+ .genericon {
+  position: relative;
+  top: -0.24em;
+  margin-right: 0.3em;
+  font-size: 1.9em;
+  color: white;
+ }
+
+ &:hover { opacity: 1; }
+}

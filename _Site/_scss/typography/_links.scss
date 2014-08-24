@@ -1,0 +1,7 @@
+a {
+ color:$link-color;
+ @include ease;
+
+ &:focus, &:hover, &:active {outline: 0;}
+ &:hover {color:$link-hover-color;}
+}
