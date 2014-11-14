@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Code Motel</title>
+	<title>Code Motel</title>
 	<meta charset="utf-8">
 	<meta name="description" content="Short-term hosting for development projects." />
 	<meta name="author" content="chris@see8ch.com">
