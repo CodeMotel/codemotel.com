@@ -15,7 +15,7 @@
  <div id="locate">
   <p class="tip">Looking for your site?</p>
   <div id="get-url">
-   <form id="urlForm"><span>http://</span><input id="site-url" type="text"/><span id="form-tooltip">Your Name Here</span><span>.thecodemotel.com</span><input id="site-button" type="submit" value="Go" /></form>
+   <form id="urlForm"><span>http://</span><input id="site-url" type="text"/><span id="form-tooltip">Your Name Here</span><span>.codemotel.com</span><input id="site-button" type="submit" value="Go" /></form>
   </div>
  </div>
 

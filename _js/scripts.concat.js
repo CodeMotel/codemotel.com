@@ -101,7 +101,7 @@ $("html").addClass("" + userversion + "");
 $(document).ready(function() {
      $('#urlForm').submit( function() {
 										company = $('#site-url').val();
-          goUrl = 'http://' + company + '.thecodemotel.com/';
+          goUrl = 'http://' + company + '.codemotel.com/';
 										window.location = goUrl;
           return false;
      });
